@@ -6,8 +6,8 @@ The concept is based on FAISS indexing of the embeddings representing the text o
 
 This is hosted on Streamlit, where the user can ask a query related to Hugging Face datasets and receive the top 3 answers which our search engine finds most similar semantically from the dataset rows that we have used. The interface will show the title, similarity score, body, comment, and the HTML URL which will direct us to the original page of the issue on Hugging Face datasets.
 
-An example showing the first nearest similar result with respect to the query asked by the user (only displaying the nearest, there are two others as well) on the Streamlit platform (running `app.py` file after all requirements are satisfied):
-![Example Image](https://github.com/user-attachments/assets/67c55a69-eff9-4401-8c24-15b0431feeb6)
+An example showing the first nearest similar result with respect to the query asked by the user (only displaying the nearest, there are two others as well) on the Streamlit platform :
+![Example Image](!(https://github.com/user-attachments/assets/75916a7c-1437-498f-82eb-18208ad314fd)
 
 The dataset used in this project was built from scratch using GitHub issues from the Hugging Face datasets repo. Detailed information on the dataset can be found on the model card on my Hugging Face account. This provides detailed information on how I approached creating this dataset from scratch for making this search engine: [Dataset Link](https://huggingface.co/datasets/amannagrawall002/github-issues). The code itself is also properly commented and explains the flow.
 
