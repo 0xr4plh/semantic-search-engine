@@ -1,6 +1,6 @@
 ### Semantic Search Engine
 
-This repository contains a semantic search engine specifically designed to address user queries related to the GitHub issues of the Hugging Face (repo - datasets). The user's query is a short question about issues related to Hugging Face datasets, and in return, the user will get the semantically most similar answer (Title + body + comments) provided by other users on the GitHub issues of Hugging Face datasets.
+This repository contains a semantic search engine specifically designed to address user queries related to the GitHub issues of the Hugging Face (repo - datasets). The user's query is a short question about issues related to Hugging Face datasets, and in return, the user will get the semantically most similar answer (Title + body + comments) provided by other users on the GitHub issues of Hugging Face datasets. Any datasets which were result of running files from 0 to 4 are not uploaded here , as they were bigger than the size git allows , rest of the information regarding datasets is given further ahead.
 
 The concept is based on FAISS indexing of the embeddings representing the text of every row of our final dataset. The user question is converted into an embedding, and every row of our dataset also has an embedding corresponding to it. The row embedding that is most similar to the user question (top 3) is displayed on `app.py` on Streamlit or on `search_engine_on_local.py`/Python console which the user is using. `requirements.txt` is provided to set up the Python environment.
 
